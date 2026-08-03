@@ -1,0 +1,10 @@
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        ones=0
+        while n>0:
+            if n>>1<n/2:
+                ones+=1
+            print(n)
+            n>>=1
+        return ones
+        
